@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+}
+
+#pokemon-image{
+    image-rendering: pixelated;
+    transition-duration: 100ms;
+}
+
+#pokemon-card:hover{
+    border: solid #EDEDED 2px;
+}
+
+#pokemon-card:hover #pokemon-image{
+    transform: scale(1.15);
+    
+}
+
+.slide-in{
+    animation:slideIn ease-in-out 0.35s;
+    animation-fill-mode: forwards;
+}
