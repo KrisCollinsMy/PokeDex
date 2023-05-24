@@ -31,9 +31,11 @@ function App() {
         className="absolute -top-20 -left-40"
       />
 
-      <div className="lg:w-[90%] grid justify-center items-center m-[auto]">
+      <div className="w-[90%] flex flex-row mx-[auto] justify-center">
         <Search pokemonList={pokemonList} setPokemonList={setPokemonList} originalPokemonList={originalPokemonList}/>
         <PokemonList pokemonList={pokemonList}/>
+        
+        {/* <PokemonInfo/> */}
       </div>
     </div>
   );

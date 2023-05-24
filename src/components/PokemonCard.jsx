@@ -24,7 +24,7 @@ const PokemonCard = ({ pokemonDetails }) => {
   return (
     <div
       id="pokemon-card"
-      className="cursor-pointer min-w-[200px] relative border-2 pt-[40px] mt-[60px] mx-[10px] px-[15px] pb-[15px] bg-white rounded-[1rem] shadow border-white p-2 flex flex-col justify-center items-center"
+      className="cursor-pointer min-w-[200px] w-[320px] relative border-2 pt-[40px] mt-[60px] mx-[10px] px-[15px] pb-[15px] bg-white rounded-[1rem] shadow border-white p-2 flex flex-col grow justify-center items-center"
     >
       <img
         id="pokemon-image"

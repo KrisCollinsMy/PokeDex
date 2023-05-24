@@ -17,7 +17,7 @@ const Search = ({ setPokemonList, originalPokemonList }) => {
       }
     });
 
-    value == "" || searchedPokemonList.length == 1
+    value == "" && searchedPokemonList.length == 1
       ? setPokemonList(originalPokemonList)
       : setPokemonList(searchedPokemonList);
   };
