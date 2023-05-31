@@ -35,5 +35,29 @@ export async function getBasicPokemonDetails() {
     }
   }
   return updatedPokemonList;
-  //setPokemonList(updatedPokemonList);
+}
+
+export async function getPokemonInfo(pokemonId) {
+  const pokemonInfo = await fetchData(
+    "https://pokeapi.co/api/v2/pokemon/" + pokemonId
+  );
+
+  return pokemonInfo;
+}
+
+export async function getPokemonDescription(pokemonId) {
+  const pokemonDescription = await fetchData(
+    "https://pokeapi.co/api/v2/pokemon-species/" + pokemonId
+  );
+
+  return pokemonDescription;
+}
+
+export async function getPokemonEvolutionChain(pokemonId) {
+  const pokemonDescription = await getPokemonDescription(pokemonId);
+  const evolutionChain = await fetchData(
+    pokemonDescription.evolution_chain.url
+  );
+
+  return evolutionChain;
 }

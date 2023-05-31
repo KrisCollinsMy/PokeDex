@@ -1,3 +1,5 @@
+import PokemonInfo from "./PokemonInfo";
+
 const typeColors = {
   normal: "#BCBCAC",
   fighting: "#BC5442",
@@ -20,11 +22,14 @@ const typeColors = {
   shadow: "#0E2E4C",
 };
 
-const PokemonCard = ({ pokemonDetails }) => {
+const PokemonCard = ({ pokemonDetails, setSelectedPokemon }) => {
   return (
     <div
       id="pokemon-card"
-      className="cursor-pointer min-w-[200px] w-[320px] relative border-2 pt-[40px] mt-[60px] mx-[10px] px-[15px] pb-[15px] bg-white rounded-[1rem] shadow border-white p-2 flex flex-col grow justify-center items-center"
+      className="cursor-pointer min-w-[150px] w-[240px] relative border-2 pt-[40px] mt-[60px] mx-[10px] px-[15px] pb-[15px] bg-white rounded-[1rem] shadow border-white p-2 flex flex-col grow justify-center items-center"
+      onClick={() => {
+        setSelectedPokemon(pokemonDetails);
+      }}
     >
       <img
         id="pokemon-image"

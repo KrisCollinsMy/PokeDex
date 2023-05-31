@@ -10,3 +10,8 @@ export async function fetchData(url) {
     console.log("Error fetching data:", error);
   }
 }
+
+/**filter id from species url */
+export function filterIdFromSpeciesURL(url){
+  return url.replace('https://pokeapi.co/api/v2/pokemon-species/', '').replace('/', '');
+};
