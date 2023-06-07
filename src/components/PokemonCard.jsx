@@ -1,34 +1,46 @@
-import PokemonInfo from "./PokemonInfo";
-
-const typeColors = {
-  normal: "#BCBCAC",
-  fighting: "#BC5442",
-  flying: "#669AFF",
-  poison: "#AB549A",
-  ground: "#DEBC54",
-  rock: "#BCAC66",
-  bug: "#ABBC1C",
-  ghost: "#6666BC",
-  steel: "#ABACBC",
-  fire: "#FF421C",
-  water: "#2F9AFF",
-  grass: "#78CD54",
-  electric: "#FFCD30",
-  psychic: "#FF549A",
-  ice: "#78DEFF",
-  dragon: "#7866EF",
-  dark: "#785442",
-  fairy: "#FFACFF",
-  shadow: "#0E2E4C",
-};
+import typeColors from "../utils/data";
+import { PropTypes } from "prop-types";
 
 const PokemonCard = ({ pokemonDetails, setSelectedPokemon }) => {
   return (
     <div
-      id="pokemon-card"
-      className="cursor-pointer min-w-[150px] w-[240px] relative border-2 pt-[40px] mt-[60px] mx-[10px] px-[15px] pb-[15px] bg-white rounded-[1rem] shadow border-white p-2 flex flex-col grow justify-center items-center"
+      className="pokemon-card cursor-pointer min-w-[200px] sm:w-[100px] md:w-[200px] lg:w-[230px] relative border-2 pt-[40px] mt-[60px] mx-[10px] px-[15px] pb-[15px] bg-white rounded-[1rem] shadow border-white p-2 flex flex-col grow justify-center items-center"
       onClick={() => {
+        //set pokemon details
         setSelectedPokemon(pokemonDetails);
+
+        //show pokemon info
+        document
+          .getElementById("current-pokemon-container")
+          .classList.remove("hide");
+
+        //show pokemon info background
+        document.getElementById("current-pokemon-container").style.display =
+          "flex";
+
+        document.getElementById(
+          "current-pokemon-container-background"
+        ).style.display = "block";
+
+        //set background color
+        pokemonDetails
+          ? (document.getElementById(
+              "current-pokemon-container-background"
+            ).style.backgroundColor = typeColors[pokemonDetails.types[0]])
+          : null;
+
+        //show close button
+        document
+          .getElementById("current-pokemon-responsive-close")
+          .classList.remove("hide");
+
+        //show pokemon info animation
+        document
+          .getElementById("current-pokemon-container")
+          .classList.add("slide-in");
+        document
+          .getElementById("current-pokemon-container")
+          .classList.remove("slide-out");
       }}
     >
       <img
@@ -58,6 +70,11 @@ const PokemonCard = ({ pokemonDetails, setSelectedPokemon }) => {
       </div>
     </div>
   );
+};
+
+PokemonCard.propTypes = {
+  pokemonDetails: PropTypes.object,
+  setSelectedPokemon: PropTypes.func,
 };
 
 export default PokemonCard;

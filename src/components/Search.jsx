@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { PropTypes } from "prop-types";
 
 const Search = ({ setPokemonList, originalPokemonList }) => {
   const [pokemonName, setPokemonName] = useState("");
@@ -33,6 +34,11 @@ const Search = ({ setPokemonList, originalPokemonList }) => {
       />
     </div>
   );
+};
+
+Search.propTypes = {
+  setPokemonList: PropTypes.func,
+  originalPokemonList: PropTypes.array,
 };
 
 export default Search;

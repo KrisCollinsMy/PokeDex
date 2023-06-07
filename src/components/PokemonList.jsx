@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react";
 import PokemonCard from "./PokemonCard";
-import { getBasicPokemonDetails } from "../utils/getPokemonApi";
+import { PropTypes } from "prop-types";
 
 const PokemonList = ({ pokemonList, setSelectedPokemon }) => {
   return (
-    <div className="w-[95%] flex flex-wrap justify-center m-[auto] mt-[7rem] mb-[3rem]">
+    <div id="pokemon-list-container" className="w-[95%] flex flex-wrap justify-center m-[auto] mt-[7rem] mb-[3rem] mx-[1rem">
       {pokemonList ? (
         pokemonList.map((pokemon, index) => {
           if (index === 0) {
@@ -23,6 +22,11 @@ const PokemonList = ({ pokemonList, setSelectedPokemon }) => {
       )}
     </div>
   );
+};
+
+PokemonList.propTypes = {
+  pokemonList: PropTypes.array,
+  setSelectedPokemon: PropTypes.func,
 };
 
 export default PokemonList;

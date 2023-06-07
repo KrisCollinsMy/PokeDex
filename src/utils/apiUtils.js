@@ -11,7 +11,18 @@ export async function fetchData(url) {
   }
 }
 
-/**filter id from species url */
-export function filterIdFromSpeciesURL(url){
-  return url.replace('https://pokeapi.co/api/v2/pokemon-species/', '').replace('/', '');
-};
+export function filterIdFromSpeciesURL(url) {
+  return url
+    .replace("https://pokeapi.co/api/v2/pokemon-species/", "")
+    .replace("/", "");
+}
+
+export function handlePromise(promiseFn, setResult) {
+  promiseFn()
+    .then((result) => {
+      setResult(result);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
