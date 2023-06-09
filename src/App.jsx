@@ -1,9 +1,12 @@
 import "./App.css";
-import PokemonInfo from "./components/PokemonInfo";
-import PokemonList from "./components/PokemonList";
-import Search from "./components/Search";
 import { useState, useEffect } from "react";
 import { getBasicPokemonDetails } from "./utils/getPokemonApi";
+import Loader from "./components/Loader";
+import { Suspense, lazy } from "react";
+
+const Search = lazy(() => import("./components/Search"));
+const PokemonList = lazy(() => import("./components/PokemonList"));
+const PokemonInfo = lazy(() => import("./components/PokemonInfo"));
 
 function App() {
   const [pokemonList, setPokemonList] = useState([]);
@@ -19,7 +22,7 @@ function App() {
         //set the first 24 pokemon
         setPokemonList(result.slice(0, 25));
         //set the starting point index for the next 24 pokemon to be loaded
-        setPokemonLoadedListIndex(24)
+        setPokemonLoadedListIndex(24);
       })
       .catch((error) => {
         // Handle any errors that occurred during the promise execution
@@ -41,13 +44,9 @@ function App() {
         Math.ceil(scrollTop + clientHeight) >= scrollHeight;
 
       if (isScrolledToBottom) {
-        console.log("scrolled to bottom");
         //show an additional 24 pokemon in the pokemon list
         setPokemonList(
-          originalPokemonList.slice(
-            0,
-            pokemonLoadedListIndex + 25
-          )
+          originalPokemonList.slice(0, pokemonLoadedListIndex + 25)
         );
         //set the starting point index for the next 24 pokemon to be loaded
         setPokemonLoadedListIndex(pokemonLoadedListIndex + 24);
@@ -74,20 +73,26 @@ function App() {
         className="sm:w-[100%] lg:w-[85%] mx-[auto]"
       >
         <div className="flex flex-col justify-center lg:mr-[340px] md:mr-[8px] sm:mr-[8px]">
-          <Search
-            setPokemonList={setPokemonList}
-            originalPokemonList={originalPokemonList}
-          />
-          <PokemonList
-            pokemonList={pokemonList}
-            setSelectedPokemon={setSelectedPokemon}
-          />
+          <Suspense fallback={<Loader/>}>
+            <Search
+              setPokemonList={setPokemonList}
+              originalPokemonList={originalPokemonList}
+            />
+          </Suspense>
+          <Suspense fallback={<Loader/>}>
+            <PokemonList
+              pokemonList={pokemonList}
+              setSelectedPokemon={setSelectedPokemon}
+            />
+          </Suspense>
         </div>
 
         <div className="sm:block md:hidden lg:block">
-          <PokemonInfo
-            pokemonId={selectedPokemon ? selectedPokemon.id : null}
-          />
+          <Suspense fallback={<Loader/>}>
+            <PokemonInfo
+              pokemonId={selectedPokemon ? selectedPokemon.id : null}
+            />
+          </Suspense>
         </div>
       </div>
     </div>
