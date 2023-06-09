@@ -76,6 +76,7 @@ const PokemonInfo = ({ pokemonId }) => {
         <div id="current-pokemon-container" className="container column center">
           <img
             id="current-pokemon-image"
+            alt="current pokemon image"
             src={getImageUrl()}
             style={{
               ...(pokemonInfo && {
@@ -303,6 +304,7 @@ const PokemonInfo = ({ pokemonId }) => {
                     <img
                       id="current-pokemon-evolution-0"
                       className="current-pokemon-evolution-image"
+                      alt="first pokemon evolution"
                       onClick={() => {
                         pokemonId = filterIdFromSpeciesURL(
                           pokemonEvolutionChain.chain.species.url
@@ -338,6 +340,7 @@ const PokemonInfo = ({ pokemonId }) => {
                     <img
                       id="current-pokemon-evolution-1"
                       className="current-pokemon-evolution-image"
+                      alt="minimum evolution level"
                       onClick={() => {
                         pokemonId = filterIdFromSpeciesURL(
                           pokemonEvolutionChain.chain.evolves_to[0].species.url
@@ -381,6 +384,7 @@ const PokemonInfo = ({ pokemonId }) => {
                     <img
                       id="current-pokemon-evolution-2"
                       className="current-pokemon-evolution-image"
+                      alt="second evolution image"
                       onClick={() => {
                         pokemonId = filterIdFromSpeciesURL(
                           pokemonEvolutionChain.chain.evolves_to[0]
