@@ -47,7 +47,7 @@ body {
 #search-bar-container {
   position: relative;
   width: 95%;
-  margin: 3rem auto -5rem auto;
+  margin: 3rem auto 1rem auto;
   border-radius: 20px;
   padding: 0.5rem;
   background-color: white;
@@ -368,9 +368,5 @@ input {
   .pokemon-render-result-container {
       flex: unset;
       width: 100%;
-  }
-  
-  #search-bar-container {
-      margin: 40px 0;
   }
 }

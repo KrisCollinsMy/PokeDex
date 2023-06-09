@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 
 const PokemonList = ({ pokemonList, setSelectedPokemon }) => {
   return (
-    <div id="pokemon-list-container" className="w-[95%] flex flex-wrap justify-center m-[auto] mt-[7rem] mb-[3rem] mx-[1rem">
+    <div id="pokemon-list-container" className="w-[95%] flex flex-wrap justify-center m-[auto]">
       {pokemonList ? (
         pokemonList.map((pokemon, index) => {
           if (index === 0) {

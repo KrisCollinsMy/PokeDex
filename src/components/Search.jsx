@@ -24,7 +24,7 @@ const Search = ({ setPokemonList, originalPokemonList }) => {
   };
 
   return (
-    <div id="search-bar-container">
+    <div id="search-bar-container" className="m-[auto]">
       <input
         id="search-input"
         value={pokemonName}

@@ -1,5 +1,6 @@
 import typeColors from "../utils/data";
 import { PropTypes } from "prop-types";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const PokemonCard = ({ pokemonDetails, setSelectedPokemon }) => {
   return (
@@ -43,7 +44,7 @@ const PokemonCard = ({ pokemonDetails, setSelectedPokemon }) => {
           .classList.remove("slide-out");
       }}
     >
-      <img
+      <LazyLoadImage
         id="pokemon-image"
         className="absolute -top-[55px] w-[100px] h-[100px]"
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonDetails.id}.png`}

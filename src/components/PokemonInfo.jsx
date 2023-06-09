@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import typeColors from "../utils/data";
 import { handlePromise } from "../utils/apiUtils";
 import { PropTypes } from "prop-types";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PokemonInfo = ({ pokemonId }) => {
   const [pokemonInfo, setPokemonInfo] = useState(null);
@@ -74,7 +75,7 @@ const PokemonInfo = ({ pokemonId }) => {
       </div>
       <div id="current-pokemon-container-background" className="bg-black">
         <div id="current-pokemon-container" className="container column center">
-          <img
+          <LazyLoadImage
             id="current-pokemon-image"
             alt="current pokemon image"
             src={getImageUrl()}
@@ -301,7 +302,7 @@ const PokemonInfo = ({ pokemonId }) => {
                 pokemonEvolutionChain.chain.evolves_to &&
                 pokemonEvolutionChain.chain.evolves_to.length != 0 ? (
                   <>
-                    <img
+                    <LazyLoadImage
                       id="current-pokemon-evolution-0"
                       className="current-pokemon-evolution-image"
                       alt="first pokemon evolution"
@@ -337,7 +338,7 @@ const PokemonInfo = ({ pokemonId }) => {
                             .evolution_details[0].min_level
                         : "?"}
                     </div>
-                    <img
+                    <LazyLoadImage
                       id="current-pokemon-evolution-1"
                       className="current-pokemon-evolution-image"
                       alt="minimum evolution level"
@@ -381,7 +382,7 @@ const PokemonInfo = ({ pokemonId }) => {
                             .evolves_to[0].evolution_details[0].min_level
                         : "?"}
                     </div>
-                    <img
+                    <LazyLoadImage
                       id="current-pokemon-evolution-2"
                       className="current-pokemon-evolution-image"
                       alt="second evolution image"

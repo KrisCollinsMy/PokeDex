@@ -16,10 +16,10 @@ function App() {
       .then((result) => {
         // set the result of the resolved promise
         setOriginalPokemonList(result);
-        //set the first 30 pokemon
-        setPokemonList(result.slice(0, 31));
-        //set the starting point index for the next 30 pokemon to be loaded
-        setPokemonLoadedListIndex(30)
+        //set the first 24 pokemon
+        setPokemonList(result.slice(0, 25));
+        //set the starting point index for the next 24 pokemon to be loaded
+        setPokemonLoadedListIndex(24)
       })
       .catch((error) => {
         // Handle any errors that occurred during the promise execution
@@ -42,15 +42,15 @@ function App() {
 
       if (isScrolledToBottom) {
         console.log("scrolled to bottom");
-        //show an additional 30 pokemon in the pokemon list
+        //show an additional 24 pokemon in the pokemon list
         setPokemonList(
           originalPokemonList.slice(
             0,
-            pokemonLoadedListIndex + 31
+            pokemonLoadedListIndex + 25
           )
         );
-        //set the starting point index for the next 30 pokemon to be loaded
-        setPokemonLoadedListIndex(pokemonLoadedListIndex + 30);
+        //set the starting point index for the next 24 pokemon to be loaded
+        setPokemonLoadedListIndex(pokemonLoadedListIndex + 24);
       }
     }
 
