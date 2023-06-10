@@ -1,13 +1,12 @@
 <div align="center">
-    <img src="./artwork/logo.png">
     <br>
     <strong> PokeDex </strong>
     <br>
     Live demo at <a href="https://poke-dex-blond.vercel.app/">https://poke-dex-blond.vercel.app/</a>
     <br>
-    <img src="https://imgur.com/sFuLsYf">
+    <a href="https://imgur.com/sFuLsYf"><img src="https://i.imgur.com/sFuLsYf.png" title="source: imgur.com" /></a>
     <br>
-    <img src="https://imgur.com/z4dMYoG">
+    <a href="https://imgur.com/z4dMYoG"><img src="https://i.imgur.com/z4dMYoG.png" title="source: imgur.com" /></a>
 </div>
 
 ## Features
