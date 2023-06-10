@@ -3,28 +3,22 @@
     <br>
     <strong> PokeDex </strong>
     <br>
-    Live demo at <a href="https://shaansubbaiah.github.io">shaansubbaiah.github.io</a>
+    Live demo at <a href="https://poke-dex-blond.vercel.app/">https://poke-dex-blond.vercel.app/</a>
     <br>
-    If you find <strong>Portfolio</strong> useful, make sure to 🌟 the repository!
+    <img src="https://imgur.com/sFuLsYf">
     <br>
-    <img src="./artwork/mobile-screenshot.png">
-    <br>
-    <img src="./artwork/desktop-screenshot.png">
+    <img src="https://imgur.com/z4dMYoG">
 </div>
 
 ## Features
 
 - Website features
   - Responsive
-  - Dark Mode
-  - SEO score of 100 on Lighthouse
-  - Customizable colors, no. of repos, social, links, etc
-  - Supports displaying repository social preview images
-  - Display GitHub profile README.md
-  - To-do: GitHub Gists support _using iframe embeds_
-  - To-do: Blurry/Frosted glass styled repo cards
-- Deploy to GitHub pages directly from Portfolio
-- Uses ViteJS under the hood fu=or building, live preview on development
+  - Search Pokemon by name
+  - View 898 Pokemon information
+  - Lazy loading pokemon images to increase page load speed
+  - Lazy loading components
+  - List virtualization/windowing PokemonList
 
 ## Getting Started
 
