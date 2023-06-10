@@ -9,7 +9,6 @@
     <!-- make it side by side -->
     <a style="flex:1;" href="https://imgur.com/NKi54nK"><img src="https://i.imgur.com/NKi54nK.png" title="source: imgur.com" /></a>
     <a style="flex:1;" href="https://imgur.com/sFuLsYf"><img src="https://i.imgur.com/sFuLsYf.png" title="source: imgur.com" /></a>
-
     </div>
 </div>
 
