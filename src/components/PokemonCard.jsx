@@ -45,8 +45,7 @@ const PokemonCard = ({ pokemonDetails, setSelectedPokemon }) => {
       }}
     >
       <LazyLoadImage
-        id="pokemon-image"
-        className="absolute -top-[55px] w-[100px] h-[100px]"
+        className="pokemon-image absolute -top-[55px] w-[100px] h-[100px]"
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonDetails.id}.png`}
         alt={pokemonDetails.name}
       />

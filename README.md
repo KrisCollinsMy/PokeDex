@@ -3,12 +3,12 @@
     <strong> PokeDex </strong>
     <br>
     Live demo at <a href="https://poke-dex-blond.vercel.app/">https://poke-dex-blond.vercel.app/</a>
-    <a href="https://imgur.com/z4dMYoG"><img src="https://i.imgur.com/z4dMYoG.png" title="source: imgur.com" /></a>
+    <a href="https://imgur.com/z4dMYoG"><img height="620" src="https://imgur.com/zOD48w4" title="source: imgur.com" /></a>
     <br>
     <div style="display:flex; flex-direction:row; justify-content:center;">
     <!-- make it side by side -->
-    <a style="flex:1;" href="https://imgur.com/NKi54nK"><img src="https://i.imgur.com/NKi54nK.png" title="source: imgur.com" /></a>
-    <a style="flex:1;" href="https://imgur.com/sFuLsYf"><img src="https://i.imgur.com/sFuLsYf.png" title="source: imgur.com" /></a>
+    <a style="flex:1;" href="https://imgur.com/XKOPslB"><img height="620" src="https://imgur.com/XKOPslB" title="source: imgur.com" /></a>
+    <a style="flex:1;" href="https://imgur.com/ZuSSkYZ"><img height="620" src="https://imgur.com/ZuSSkYZ" title="source: imgur.com" /></a>
     </div>
 </div>
 

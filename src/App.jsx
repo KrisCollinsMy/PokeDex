@@ -69,17 +69,17 @@ function App() {
       />
 
       <div
-        id="pokemonSearchSection"
+        id="pokemon-search-section"
         className="sm:w-[100%] lg:w-[85%] mx-[auto]"
       >
         <div className="flex flex-col justify-center lg:mr-[340px] md:mr-[8px] sm:mr-[8px]">
-          <Suspense fallback={<Loader/>}>
+          <Suspense fallback={<Loader />}>
             <Search
               setPokemonList={setPokemonList}
               originalPokemonList={originalPokemonList}
             />
           </Suspense>
-          <Suspense fallback={<Loader/>}>
+          <Suspense fallback={<Loader />}>
             <PokemonList
               pokemonList={pokemonList}
               setSelectedPokemon={setSelectedPokemon}
@@ -88,7 +88,7 @@ function App() {
         </div>
 
         <div className="sm:block md:hidden lg:block">
-          <Suspense fallback={<Loader/>}>
+          <Suspense fallback={<Loader />}>
             <PokemonInfo
               pokemonId={selectedPokemon ? selectedPokemon.id : null}
             />
