@@ -14,7 +14,7 @@
 
 <div align="center">
 <h3>Desktop</h3>
-![Desktop Pokemon Info](https://github.com/KrisCollinsMy/PokeDex/blob/main/public/readme-media/desktop-pokemon-info.gif)
+![Desktop Pokemon Info](public/readme-media/desktop.gif)
 <br>
 <h3>Mobile</h3>
 ![Desktop Pokemon Info](https://github.com/KrisCollinsMy/PokeDex/blob/main/public/readme-media/desktop-pokemon-info.gif)
