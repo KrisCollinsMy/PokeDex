@@ -10,16 +10,10 @@ A simple application used to search and view pokemon information, built with Rea
 
 #### Mobile
 
-<svg xmlns="http://www.w3.org/2000/svg">
-<foreignObject width="200" height="500">
-    <div xmlns="http://www.w3.org/1999/xhtml">
 <div style="display:flex; flex-direction:row; justify-content:center;">
 <img src="public/readme-media/mobile-pokemon-info.gif" width="50%"/>
 <img src="public/readme-media/search-pokemon.gif" width="50%"/>
 </div>
-</div>
-</foreignObject>
-</svg>
 <br>
 
 ## Installation and Setup Instructions
@@ -51,8 +45,8 @@ To Visit App:
 ## Concepts applied to project
 
 - Lazy loading
-  - pokemon images to increase page load speed
-  - components with suspend
+    - pokemon images to increase page load speed
+    - components with suspend
 - List virtualization/windowing PokemonList
 
 ## Credits
