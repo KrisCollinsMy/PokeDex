@@ -11,8 +11,8 @@ A simple application used to search and view pokemon information, built with Rea
 #### Mobile
 
 <div style="display:flex; flex-direction:row; justify-content:center;">
-<img src="public/readme-media/mobile-pokemon-info.gif" width="50%"/>
-<img src="public/readme-media/search-pokemon.gif" width="50%"/>
+<img align="left" src="public/readme-media/mobile-pokemon-info.gif" width="50%"/>
+<img align="right" src="public/readme-media/search-pokemon.gif" width="50%"/>
 </div>
 <br>
 
