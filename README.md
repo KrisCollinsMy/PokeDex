@@ -1,130 +1,57 @@
-<div align="center">
-    <br>
-    <h2><strong> PokeDex </strong></h2>
-    <br>
-    Live demo at <a href="https://poke-dex-blond.vercel.app/">https://poke-dex-blond.vercel.app/</a>
-    <br>
-    <div style="display:flex; flex-direction:row; justify-content:center;">
-    ![](https://github.com/PokeDex/public/readme-media/desktop.gif)
-    ![](https://github.com/PokeDex/public/readme-media/desktop.gif)
-    </div>
-</div>
+## Pokedex
+
+A simple application used to search and view pokemon information, built with React, TailwindCSS, and Cypress for E2E testing. [Live Demo](https://poke-dex-blond.vercel.app/)
 
 ## Screenshots
 
-<div align="center">
-<h3>Desktop</h3>
+#### Desktop
+
 ![Desktop Pokemon Info](public/readme-media/desktop.gif)
-<br>
-<h3>Mobile</h3>
-![Desktop Pokemon Info](https://github.com/KrisCollinsMy/PokeDex/blob/main/public/readme-media/desktop-pokemon-info.gif)
-<br>
-<h3>Mobile Search Feature</h3>
+
+#### Mobile
+
+<div style="display:flex; flex-direction:row; justify-content:center;">
+<img src="public/readme-media/mobile-pokemon-info.gif" width="50%"/>
 </div>
+<br>
+
+## Installation and Setup Instructions
+
+Clone down this repository. You will need `node`, `cypress` and `npm` installed globally on your machine.
+
+Installation:
+
+`npm install`
+
+To Run Test Suite:
+
+`npm run cypress:open`
+
+To Start Server:
+
+`npm run dev`
+
+To Visit App:
+
+`localhost:5173/`
 
 ## Features
 
-- Website features
-  - Responsive
-  - Search Pokemon by name
-  - View 898 Pokemon information
-  - Lazy loading pokemon images to increase page load speed
-  - Lazy loading components
-  - List virtualization/windowing PokemonList
+- Responsive
+- Search Pokemon by name
+- View 898 Pokemon information
 
-## Getting Started
+## Concepts applied to project
 
-### Install
+- Lazy loading
+    - pokemon images to increase page load speed
+    - components with suspend
+- List virtualization/windowing PokemonList
 
-1. Clone the repo or download the [latest release](https://github.com/shaansubbaiah/Portfolio/releases)
+## Credits
 
-```
-git clone git@github.com:shaansubbaiah/Portfolio.git
-```
-
-2. Install dependencies
-
-```bash
-cd Portfolio
-
-npm install
-```
-
-3. Run Portfolio
-
-```bash
-node portfolio.js
-```
-
-4. Set the Github token, edit the config and then build!
-
-> See [Configuration](#configuration)
-
-> A token can be created at https://github.com/settings/tokens/new
-
-> Make sure you have selected atleast **public_repo**, **read:user** permissions while creating the token!
-
-5. You can deploy the website to your github pages site (generally https://<your_username>.github.io) from Portfolio. OR Manually copy contents in `dist/` to your github pages repository.
-
-6. Done
-
-## Development
-
-Portfolio now uses ViteJS which significantly improves over the previosuly existing development workflow.
-
-The website files are in `src/`
-
-To view the site with hot-reload on changes, run:
-
-```bash
-npm run dev
-```
-
-If there's data missing, you might have to build the site once so it writes the GitHub data to `./github-data.json`
-
-## Building
-
-Run Portfolio and select the build option.
-
-Under the hood, Portfolio runs `vite build` which reads the config from `vite.config.js` and the build files are at `dist/`
-
-## Configuration
-
-**username**: String - your Github username
-
-**repos**: Integer - number of repositories to display, **MAX 100**
-
-**avatar**: String - path(local/remote) to an image for the avatar and favicon. If not specified, uses your GitHub avatar.
-
-**linkedinURL**: String - your LinkedIn profile link. Set to _null_ in config.json to disable it / press <kbd>enter</kbd> while setting it up.
-
-**twitterId**: String - your Twitter profile id. Set to _null_ in config.json to disable it / press <kbd>enter</kbd> while setting it up. (Portfolio will automatically get your Twitter ID if you have added it to your GitHub profile)
-
-**gitlabId**: String - your GitLab profile id. Set to _null_ in config.json to disable it / press <kbd>enter</kbd> while setting it up.
-
-**navLinks**: Object Array - adds navigation links at the top. **DON'T EXCEED 3**
-
-    where,
-    name: String - Text to display
-    link: String - URL the text links to
-
-**infoLinks**: Object Array - adds additional links in the information section.
-
-    where,
-    name: String - Text to display
-    link: String - URL the text links to
-
-**socialPreviewImage**: String - displays repo's social preview image in the card. To enable, set value = "enabled".
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Related
-
-[Gitfolio](https://github.com/imfunniee/gitfolio)
-
-[Dev Portfolio](https://github.com/RyanFitzgerald/devportfolio)
+- [Design by AC1design](https://dribbble.com/shots/15128634-Pokemon-Pokedex-Website-Redesign-Concept)
+- [PokeAPI](https://pokeapi.co/)
 
 ## License
 

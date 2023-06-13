@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1686601924279" clover="3.2.0">
-  <project timestamp="1686601924279" name="All files">
+<coverage generated="1686675045192" clover="3.2.0">
+  <project timestamp="1686675045192" name="All files">
     <metrics statements="91" coveredstatements="41" conditionals="7" coveredconditionals="7" methods="7" coveredmethods="4" elements="105" coveredelements="52" complexity="0" loc="91" ncloc="91" packages="1" files="2" classes="2"/>
     <file name="apiUtils.js" path="/home/kris/Downloads/PokeDex/src/utils/apiUtils.js">
       <metrics statements="28" coveredstatements="20" conditionals="5" coveredconditionals="5" methods="3" coveredmethods="2"/>
