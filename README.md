@@ -3,12 +3,23 @@
     <h2><strong> PokeDex </strong></h2>
     <br>
     Live demo at <a href="https://poke-dex-blond.vercel.app/">https://poke-dex-blond.vercel.app/</a>
-    <a href="https://imgur.com/z4dMYoG"><img height="620" src="https://imgur.com/zOD48w4" title="source: imgur.com" /></a>
     <br>
     <div style="display:flex; flex-direction:row; justify-content:center;">
-    <!-- make it side by side -->
-    <a style="flex:1;" href="https://imgur.com/ZuSSkYZ"><img height="620" src="https://imgur.com/ZuSSkYZ" title="source: imgur.com" /></a>
+    ![](https://github.com/PokeDex/public/readme-media/desktop.gif)
+    ![](https://github.com/PokeDex/public/readme-media/desktop.gif)
     </div>
+</div>
+
+## Screenshots
+
+<div align="center">
+<h3>Desktop</h3>
+![Desktop Pokemon Info](https://github.com/KrisCollinsMy/PokeDex/blob/main/public/readme-media/desktop-pokemon-info.gif)
+<br>
+<h3>Mobile</h3>
+![Desktop Pokemon Info](https://github.com/KrisCollinsMy/PokeDex/blob/main/public/readme-media/desktop-pokemon-info.gif)
+<br>
+<h3>Mobile Search Feature</h3>
 </div>
 
 ## Features
